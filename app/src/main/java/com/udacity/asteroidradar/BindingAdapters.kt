@@ -9,6 +9,15 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.squareup.picasso.Picasso
 
+@BindingAdapter("statusIconDescription")
+fun bindAsteroidStatusDescription(imageView: ImageView, isHazardous: Boolean) {
+    if (isHazardous) {
+        imageView.setContentDescription(R.string.potentially_hazardous_asteroid_icon.toString())
+    } else {
+        imageView.setContentDescription(R.string.not_hazardous_asteroid_icon.toString())
+    }
+}
+
 @BindingAdapter("statusIcon")
 fun bindAsteroidStatusImage(imageView: ImageView, isHazardous: Boolean) {
     if (isHazardous) {

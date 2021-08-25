@@ -10,6 +10,9 @@
         <variable
             name="clickListener"
             type="com.udacity.asteroidradar.AsteroidListener" />
+        <variable
+            name="iconDiscriminator"
+            type="com.udacity.asteroidradar.HazardousIconDiscriminator" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,7 +33,11 @@
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_status_normal"
             tools:srcCompat="@drawable/ic_status_normal"
-            app:isHazardoudIcon="@{asteroid}"/>
+            app:isHazardoudIcon="@{asteroid}"
+            android:contentDescription="Placeholder string"
+            />
+<!--        app:statusIconDescription="@{asteroid.isPotentiallyHazardous}"-->
+<!--        android:contentDescription="@{iconDiscriminator.getIconDescription(asteroid)}"-->
 
         <TextView
             android:id="@+id/asteroid_codename"
