@@ -42,7 +42,7 @@
             android:layout_marginBottom="8dp"
             android:fontFamily="@font/martel_sans_bold"
             android:text="TextView"
-            android:textColor="#F9E1C4"
+            android:textColor="@color/colorTextOnPrimary"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/is_hazardous_image"
             app:layout_constraintEnd_toStartOf="@+id/is_hazardous_image"

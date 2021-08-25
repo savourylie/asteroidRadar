@@ -27,14 +27,6 @@ class AsteroidAdapter(val clickListener: AsteroidListener): ListAdapter<Asteroid
             binding.asteroid = item
             binding.clickListener = clickListener
             binding.executePendingBindings() // Makes it faster to size the views (advanced perf optimization)
-//            binding.asteroidCodename.text = item.codename
-//            binding.asteroidDate.text = item.closeApproachDate
-//            binding.isHazardousImage.setImageResource(
-//                when (item.isPotentiallyHazardous) {
-//                    true -> R.drawable.ic_status_potentially_hazardous
-//                    else -> R.drawable.ic_status_normal
-//                }
-//            )
         }
 
         companion object {
