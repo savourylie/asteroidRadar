@@ -34,8 +34,10 @@
             app:srcCompat="@drawable/ic_status_normal"
             tools:srcCompat="@drawable/ic_status_normal"
             app:isHazardoudIcon="@{asteroid}"
-            android:contentDescription="Placeholder string"
+            android:contentDescription="@{iconDiscriminator.getIconDescription(asteroid)}"
+            android:focusable="true"
             />
+<!--        android:contentDescription="Placeholder string"-->
 <!--        app:statusIconDescription="@{asteroid.isPotentiallyHazardous}"-->
 <!--        android:contentDescription="@{iconDiscriminator.getIconDescription(asteroid)}"-->
 
